@@ -1,7 +1,7 @@
 pipeline {
     agent any
 
-parameters {
+// parameters {
 
            
 //         choice choices: ['Component','App'], name: 'Type',  description: 'Select the type'
@@ -9,7 +9,7 @@ parameters {
            
 //          choice choices: ['Build', 'Test','Logs'], name: 'BUILDTYPE',  description: 'Type of the build'
 //         extendedChoice defaultValue: 'Unit Test,Functional Test', multiSelectDelimiter: ',', name: 'Test', quoteValue: false, saveJSONParameterToFile: false, type: 'PT_CHECKBOX', value: 'Unit Test,Functional Test', visibleItemCount: 3
-}
+// }
 stages {
           
            stage("checkout code") {
