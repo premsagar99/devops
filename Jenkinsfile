@@ -8,7 +8,7 @@ parameters {
 //         extendedChoice defaultValue: 'Vtune,Inspector,Advisor', multiSelectDelimiter: ',', name: 'Test', quoteValue: false, saveJSONParameterToFile: false, type: 'PT_CHECKBOX', value: 'Vtune,Inspector,Advisor', visibleItemCount: 4
            
         choice choices: ['Build', 'Test','Logs'], name: 'BUILDTYPE',  description: 'Type of the build'
-        extendedChoice defaultValue: 'Unit Test,Functional Test', multiSelectDelimiter: ',', name: 'Test', quoteValue: false, saveJSONParameterToFile: false, type: 'PT_CHECKBOX', value: 'Unit Test,Functional Test'
+        extendedChoice defaultValue: 'Unit Test,Functional Test', multiSelectDelimiter: ',', name: 'Test', quoteValue: false, saveJSONParameterToFile: false, type: 'PT_CHECKBOX', value: 'Unit Test,Functional Test' visibleItemCount: 3
 }
 stages {
           
@@ -29,7 +29,7 @@ stages {
            stage("unit testing") {
             when { expression { params.BUILDTYPE == 'Test' ||  params.BUILDTYPE == 'Build'  }  }
             steps {
-                println "\033[34m............unit testing..............\033[0m"
+                println "\033[34m............unit testing12..............\033[0m"
                 echo "unit testing"
             }
            }  
