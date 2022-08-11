@@ -22,8 +22,8 @@ stages {
            stage("select build VM and Build") {
              when { expression { params.BUILDTYPE == 'Test' ||  params.BUILDTYPE == 'Build'  }  }
              steps {
-               println "\033[34m............select build VM and Build..............\033[0m"
-               echo "select build VM and Build"
+              println "\033[34m............select build VM and Build..............\033[0m"
+              echo "select build VM and Build"
              }
            }
            stage("unit testing") {
