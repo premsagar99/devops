@@ -15,7 +15,7 @@ stages {
            stage("checkout code") {
              when { expression { params.BUILDTYPE == 'Build'  }  }
              steps {
-              println "\033[34m............checkout code..............\033[0m"
+              println "\033[34m............checkout code12..............\033[0m"
               echo "checkout code"
              }
            }
